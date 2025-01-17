@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Art Gallery</h2>
+
+    <label for="artistFilter">Filter by Artist:</label>
+    <select id="artistFilter" onchange="filterGallery()">
+        <option value="all">All</option>
+        <option value="van-gogh">Van Gogh</option>
+        <option value="salvador-dali">Salvador Dali</option>
+        <option value="wassily-kandinsky">Wassily Kandinsky</option>
+        <option value="olga-boznanska">Olga Boznanska</option>
+        <option value="william-turner">William Turner</option>
+        <option value="piet-mondrian">Piet Mondrian</option>
+        <option value="rembrandt">Rembrandt</option>
+    </select>
+
+    <div class="gallery">
+        <img src="Van_Goh1.jfif" alt="Van Van_Goh1" class="van-gogh" onclick="showInfo('Van Gogh', 'Starry Night Cat')"> 
+
+        <img src="Van_Goh2.jfif" alt="Van Van_Goh2" class="van-gogh" onclick="showInfo('Van Gogh', 'A self-portrait of the artist.')"> 
+
+        <img src="Van_Goh3.jfif" alt="Van Van_Goh3" class="van-gogh" onclick="showInfo('Van Gogh', 'The Starry Night')"> 
+
+        <img src="Van_Goh4.jfif" alt="Van Van_Goh4" class="van-gogh" onclick="showInfo('Van Gogh', 'Streeet Scene in Rain')"> 
+
+
+        <img src="Salvador_Dali1.jfif" alt="Salvador_Dali1" class="salvador-dali" onclick="showInfo('Salvador Dali', 'The Elephants')">
+
+        <img src="Salvador_Dali2.jfif" alt="Salvador_Dali2" class="salvador-dali" onclick="showInfo('Salvador Dali', 'The Persistence of Memory')">
+
+        <img src="Salvador_Dali3.jfif" alt="Salvador_Dali3" class="salvador-dali" onclick="showInfo('Salvador Dali', 'Dream Caused by the Flight of a Bee Around a Pomegranate')">
+
+        <img src="Salvador_Dali4.jfif" alt="Salvador_Dali4" class="salvador-dali" onclick="showInfo('Salvador Dali', 'The Eye od Time')">
+
+
+        <img src="Wassily_Kandinsky1.jfif" alt="Wassily_Kandinsky1" class="wassily-kandinsky" onclick="showInfo('Wassily Kandinsky', '')">
+
+        <img src="Wassily_Kandinsky2.jfif" alt="Wassily_Kandinsky2" class="wassily-kandinsky" onclick="showInfo('Wassily Kandinsky', '')">
+
+        <img src="Wassily_Kandinsky3.jfif" alt="Wassily_Kandinsky3" class="wassily-kandinsky" onclick="showInfo('Wassily Kandinsky', '')">
+
+        <img src="Wassily_Kandinsky4.jfif" alt="Wassily_Kandinsky4" class="wassily-kandinsky" onclick="showInfo('Wassily Kandinsky', '')">
+
+
+        <img src="Olga Boznanska1.jfif" alt="Olga_Bozananska1" class="olga-boznanska" onclick="showInfo('Olga Boznanska', '')">
+
+        <img src="Olga Boznanska2.jfif" alt="Olga_Bozananska2" class="olga-boznanska" onclick="showInfo('Olga Boznanska', '')">
+
+        <img src="Olga Boznanska3.jfif" alt="Olga_Bozananska3" class="olga-boznanska" onclick="showInfo('Olga Boznanska', '')">
+
+        <img src="Olga Boznanska4.jfif" alt="Olga_Bozananska4" class="olga-boznanska" onclick="showInfo('Olga Boznanska', '')">
+
+
+        <img src="William Turner1.jfif" alt="William Turner1" class="william-turner" onclick="showInfo('William Turner', '')">
+
+        <img src="William Turner2.jfif" alt="William Turner2" class="william-turner" onclick="showInfo('William Turner', '')">
+
+        <img src="William Turner3.jfif" alt="William Turner3" class="william-turner" onclick="showInfo('William Turner', '')">
+
+        <img src="William Turner4.jfif" alt="William Turner4" class="william-turner" onclick="showInfo('William Turner', '')">
+
+       
+        <img src="Piet Mondrian1.jfif" alt="Piet Mondrian1" class="piet-mondrian" onclick="showInfo('Piet Mondrian', '')">
+
+        <img src="Piet Mondrian2.jfif" alt="Piet Mondrian2" class="piet-mondrian" onclick="showInfo('Piet Mondrian', '')">
+
+        <img src="Piet Mondrian3.jfif" alt="Piet Mondrian3" class="piet-mondrian" onclick="showInfo('Piet Mondrian', '')">
+
+        <img src="Piet Mondrian4.jfif" alt="Piet Mondrian4" class="piet-mondrian" onclick="showInfo('Piet Mondrian', '')">
+
+
+        <img src="Rembrandt1.jfif" alt="Rembrandt1" class="rembrandt" onclick="showInfo('Rembrandt', '')">
+
+        <img src="Rembrandt2.jfif" alt="Rembrandt2" class="rembrandt" onclick="showInfo('Rembrandt', '')">
+
+        <img src="Rembrandt3.jfif" alt="Rembrandt3" class="rembrandt" onclick="showInfo('Rembrandt', '')">
+
+        <img src="Rembrandt4.jfif" alt="Rembrandt4" class="rembrandt" onclick="showInfo('Rembrandt', '')">
+    </div>
+
+    <div id="infoContainer" class="info-container">
+        <h3 id="artTitle"></h3>
+        <p id="artInfo"></p>
+        <button onclick="closeInfo()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
